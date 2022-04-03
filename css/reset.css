@@ -1,0 +1,312 @@
+@font-face {
+    font-family: IRANSans;
+    font-style: normal;
+    font-weight: normal;
+    src: url('../fonts/IRANSansWeb(FaNum).woff2');
+}
+
+html,
+body,
+body div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+figure,
+footer,
+header,
+menu,
+nav,
+section,
+time,
+mark,
+audio,
+video,
+details,
+summary {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font-weight: normal;
+    vertical-align: baseline;
+    font-family: IRANSans;
+}
+
+article,
+aside,
+figure,
+footer,
+header,
+nav,
+section,
+details,
+summary {
+    display: block;
+    font-family: IRANSans;
+}
+
+html {
+    box-sizing: border-box;
+    font-family: IRANSans;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+img,
+object,
+embed {
+    max-width: 100%;
+}
+
+html {
+    overflow-y: scroll;
+}
+
+ul {
+    list-style: none;
+    font-family: IRANSans;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+a {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    transition: all 500ms ease 0s;
+    font-family: IRANSans;
+    text-decoration: none !important;
+}
+
+del {
+    text-decoration: line-through;
+    font-family: IRANSans;
+}
+
+abbr[title],
+dfn[title] {
+    border-bottom: 1px dotted #000;
+    cursor: help;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    font-family: IRANSans;
+}
+
+th {
+    font-weight: bold;
+    vertical-align: bottom;
+    font-family: IRANSans;
+}
+
+td {
+    font-weight: normal;
+    vertical-align: top;
+    font-family: IRANSans;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    font-family: IRANSans;
+    padding: 0;
+}
+
+input,
+select {
+    vertical-align: middle;
+    font-family: IRANSans;
+}
+
+pre {
+    white-space: pre;
+    white-space: pre-wrap;
+    white-space: pre-line;
+    word-wrap: break-word;
+    font-family: IRANSans;
+}
+
+input[type="radio"] {
+    vertical-align: text-bottom;
+    font-family: IRANSans;
+}
+
+input[type="checkbox"] {
+    vertical-align: bottom;
+    font-family: IRANSans;
+}
+
+.ie7 input[type="checkbox"] {
+    vertical-align: baseline;
+}
+
+.ie6 input {
+    vertical-align: text-bottom;
+}
+
+select,
+input,
+textarea {
+    font: 99% sans-serif;
+    font-family: IRANSans;
+}
+
+table {
+    font-size: inherit;
+    font-family: IRANSans;
+    font: 100%;
+}
+
+small {
+    font-size: 85%;
+    font-family: IRANSans;
+}
+
+strong {
+    font-weight: bold;
+    font-family: IRANSans;
+}
+
+td,
+td img {
+    vertical-align: top;
+    font-family: IRANSans;
+}
+
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    font-family: IRANSans;
+    position: relative;
+}
+
+sup {
+    top: -0.5em;
+    font-family: IRANSans;
+}
+
+sub {
+    bottom: -0.25em;
+}
+
+pre,
+code,
+kbd,
+samp {
+    font-family: IRANSans, monospace, sans-serif;
+}
+
+.clickable,
+label,
+input[type=button],
+input[type=submit],
+input[type=file],
+button {
+    cursor: pointer;
+}
+
+button,
+input,
+select,
+textarea {
+    margin: 0;
+    font-family: IRANSans;
+}
+
+button,
+input[type=button] {
+    width: auto;
+    overflow: visible;
+    font-family: IRANSans;
+}
+
+.ie7 img {
+    -ms-interpolation-mode: bicubic;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: "\0020";
+    display: block;
+    height: 0;
+    overflow: hidden;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    zoom: 1;
+}

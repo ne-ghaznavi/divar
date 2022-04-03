@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>دیوار من | دیوار</title>
+
+    <!-- google font icon -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- fontawesome cdn -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+    <!-- custom styles -->
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/navigation.css" />
+    <link rel="stylesheet" href="css/user.css" />
+</head>
+
+<body>
+    <div id="wrapper">
+
+        <header class="header">
+            <div class="header-container">
+                <a href="index.html" class="logo">
+                    <img class="logo__img" src="image/logo.svg" alt="logo">
+                </a>
+                <div class="advert-btn">
+                    <a class="advert-btn__link" href="#">ثبت آگهی</a>
+                </div>
+                <div class="hamburger-container">
+                    <div class="hamburger-btn"></div>
+                </div>
+
+                <nav class="navbar">
+                    <ul class="navbar_list">
+                        <li class="navbar_item login-btn"><a class="navbar_link" href="#">دیوار من</a></li>
+                        <li class="navbar_item"><a class="navbar_link" href="#">درباره دیوار</a></li>
+                        <li class="navbar_item"><a class="navbar_link" href="#">بلاگ</a></li>
+                        <li class="navbar_item"><a class="navbar_link" href="#">پشتیبانی</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="login-modal-container">
+                <div class="login-modal">
+                    <div class="login-modal-header">
+                        <strong class="login-modal__title">ورود به حساب کاربری</strong>
+                        <span class="exit-login-modal material-icons">close</span>
+                    </div>
+                    <div class="login-modal-body">
+                        <div class="login-modal-phone">
+                            <div class="login-modal-content">
+                                <strong>شماره موبایل خود را وارد کنید</strong>
+                                <p>برای استفاده از امکانات سایت، لطفا شماره مموبایل خود را وارد کنید. کد تایید به این
+                                    شماره پیامک خواهد شد.</p>
+                                <form id="loginForm" class="login-input-form">
+                                    <input class="login-input" autocomplete="off" type="number" inputmode="numeric"
+                                        name="phone" placeholder="شماره موبایل">
+                                    <span class="login-input-tag">98+</span>
+                                </form>
+                                <span class="msg-error">لطفا یک شماره موبایل معتبر وارد نمایید</span>
+                            </div>
+                            <div class="login-modal-footer">
+                                <button class="ok-footer-btn" type="submit" form="loginForm">تایید</button>
+                            </div>
+                        </div>
+                        <div class="login-modal-code">
+                            <div class="login-modal-code-content">
+                                <strong>کد تایید را وارد کنید</strong>
+                                <p>کد پیامک شده به شماره <span>09101234567</span> را وارد کنید</p>
+                                <form action="#" id="codeForm" class="code-input-form">
+                                    <input class="code-input" autocomplete="off" type="number" inputmode="numeric"
+                                        name="phone" placeholder="کد تایید 6 رقمی">
+                                </form>
+                                <span class="msg-CodeError">کد تایید معتبر نیست</span>
+                                <div class="replace-phone-container">
+                                    <p class="replace-phone-btn">تغییر شماره موبایل</p>
+                                </div>
+
+                            </div>
+                            <div class="login-modal-code-footer">
+                                <button class="login-footer-btncode">درخواست کد</button>
+                                <button class="login-footer-btn" type="submit" form="codeForm">ورود</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="main">
+            <div class="main-container">
+                <div class="user-link__container">
+                    <div class="user-info__container">
+                        <span class="user-info__icon material-icons">person_outline</span>
+                        <div class="user-info-content">
+                            <p>کاربر دیوار</p>
+                            <p>تلفن 09101234567</p>
+                        </div>
+                    </div>
+                    <a class="user-link" href="#" data-title="advertising">
+                        <span class="user-link__icon material-icons">receipt_long</span>
+                        <p class="user-link__title">آگهی‌های من</p>
+                    </a>
+                    <a class="user-link" href="#" data-title="bookmark">
+                        <span class="user-link__icon material-icons">bookmark_border</span>
+                        <p class="user-link__title">نشان شده ها</p>
+                    </a>
+                    <a class="user-link" href="#" data-title="description">
+                        <span class="user-link__icon material-icons">description</span>
+                        <p class="user-link__title">یادداشت‌ها</p>
+                    </a>
+                    <a class="user-link" href="#" data-title="recentsee">
+                        <span class="user-link__icon material-icons">restore</span>
+                        <p class="user-link__title">بازدیدهای اخیر</p>
+                    </a>
+                    <hr>
+                    <a class="user-link" href="index.html">
+                        <span class="user-link__icon material-icons">logout</span>
+                        <p class="user-link__title">خروج</p>
+                    </a>
+                    <hr>
+                    <a class="user-link" href="#" data-title="low">
+                        <span class="user-link__icon material-icons">gavel</span>
+                        <p class="user-link__title">قوانین</p>
+                    </a>
+                    <a class="user-link" href="#" data-title="aboutus">
+                        <span class="user-link__icon material-icons">info</span>
+                        <p class="user-link__title">درباره دیوار</p>
+                    </a>
+                    <a class="user-link" href="#" data-title="joboffer">
+                        <span class="user-link__icon material-icons">work_outline</span>
+                        <p class="user-link__title">فرصت‌های شغلی</p>
+                    </a>
+                    <hr>
+                    <a class="user-link" href="#" data-title="support">
+                        <span class="user-link__icon material-icons">support</span>
+                        <p class="user-link__title">پشتیبانی</p>
+                    </a>
+                    <a class="user-link" href="#" data-title="blog">
+                        <span class="user-link__icon material-icons">text_snippet</span>
+                        <p class="user-link__title">بلاگ دیوار</p>
+                    </a>
+                </div>
+                <div class="user-data-contaienr">
+                    <div class="user-data desk-active-user-data" data-title='advertising'>
+                        <div class="user-data_header">
+                            <span class="user-data_back material-icons">arrow_right_alt </span>
+                            <p>آگهی‌های من</p>
+                        </div>
+                        <div class="user-data_body">
+                            <img src="image/back-product.svg">
+                            <p>تا به‌حال در دیوار آگهی ثبت نکرده‌اید.</p>
+                            <button class="user-data_body-btn">ثبت آگهی</button>
+                        </div>
+                    </div>
+                    <div class="user-data" data-title='bookmark'>
+                        <div class="user-data_header">
+                            <span class="user-data_back material-icons">arrow_right_alt </span>
+                            <p>نشان شده ها</p>
+                        </div>
+                        <div class="user-data_body">
+                            <img src="image/back-product.svg">
+                            <p>برای نشان‌کردن آگهی‌ها از دکمهٔ  در صفحهٔ آگهی استفاده کنید.</p>
+                        </div>
+                    </div>
+                    <div class="user-data" data-title='description'>
+                        <div class="user-data_header">
+                            <span class="user-data_back material-icons">arrow_right_alt </span>
+                            <p>یادداشت‌ها</p>
+                        </div>
+                        <div class="user-data_body">
+                            <img src="image/back-product.svg">
+                            <p>برای یادداشت گذاشتن روی آگهی‌ها می‌توانید از دکمهٔ  در صفحهٔ آگهی استفاده کنید.</p>
+                        </div>
+                    </div>
+                    <div class="user-data" data-title='recentsee'>
+                        <div class="user-data_header">
+                            <span class="user-data_back material-icons">arrow_right_alt </span>
+                            <p>بازدیدهای اخیر</p>
+                        </div>
+                        <div class="user-data_body">
+                            <img src="image/back-product.svg">
+                            <p>اخیراً از هیچ آگهی‌ای بازدید نکرده‌اید.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <a href="#" class="footer-link">
+                <img src="image/logo-aparat.svg" alt="آپارات">
+            </a>
+            <a href="#" class="footer-link">
+                <img src="image/logo-instagram.svg" alt="اینستاگرام">
+            </a>
+            <a href="#" class="footer-link">
+                <img src="image/logo-whatsapp.svg" alt="واتس آپ">
+            </a>
+        </footer>
+
+        <section class="navigation-container">
+            <div class="navigation-bottom">
+                <a href="#" class="navigation-bottom_item active-nav-item">
+                    <div class="navigation-bottom_item-img">
+                        <span class="material-icons"> description</span>
+                    </div>
+                    <div class="navigation-bottom_item-text">
+                        <span>آگهی‌ها</span>
+                    </div>
+                </a>
+                <a href="#" class="navigation-bottom_item">
+                    <div class="navigation-bottom_item-img">
+                        <span class="material-icons"> toc</span>
+                    </div>
+                    <div class="navigation-bottom_item-text">
+                        <span>دسته‌ها</span>
+                    </div>
+                </a>
+                <a href="#" class="navigation-bottom_item">
+                    <div class="navigation-bottom_item-img">
+                        <span class="material-icons"> add_circle</span>
+                    </div>
+                    <div class="navigation-bottom_item-text">
+                        <span>ثبت آگهی</span>
+                    </div>
+                </a>
+                <a href="#" class="navigation-bottom_item">
+                    <div class="navigation-bottom_item-img">
+                        <span class="material-icons">contact_support</span>
+                    </div>
+                    <div class="navigation-bottom_item-text">
+                        <span>چت</span>
+                    </div>
+                </a>
+                <a href="user.html" class="navigation-bottom_item">
+                    <div class="navigation-bottom_item-img">
+                        <span class="material-icons">person</span>
+                    </div>
+                    <div class="navigation-bottom_item-text">
+                        <span>دیوار من</span>
+                    </div>
+                </a>
+            </div>
+        </section>
+    </div>
+
+    <!-- jquery -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+
+    <!-- custom scripts -->
+    <script src="js/hader.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            // active-user-data box
+            $('.user-link').click(function() {
+                let targetTitle = $(this).attr('data-title');
+                
+                let userDataBox = $('.user-data');
+                
+                for(let i = 0; i < userDataBox.length; i++) {
+                    userDataBox.eq(i).removeClass("desk-active-user-data");
+                    
+                    if (userDataBox[i].attributes[1].value == targetTitle) {
+                        userDataBox.eq(i).addClass("active-user-data");
+                        userDataBox.eq(i).addClass("desk-active-user-data");
+                    }
+                }
+            });
+
+            // hide user-data box
+            $('.user-data_back').click(function() {
+                $(this).parents('.user-data').removeClass('active-user-data')
+            });
+        });
+    </script>
+</body>
+
+</html>

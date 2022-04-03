@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ثبت آگهی</title>
+
+    <!-- google font icon -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- fontawesome cdn -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+    <!-- custom styles -->
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/header.css"/>
+    <link rel="stylesheet" href="css/new.css"/>
+</head>
+
+<body>
+    <div id="wrapper">
+        <header class="header">
+            <div class="header-container">
+                <a href="index.html" class="logo">
+                    <img class="logo__img" src="image/logo.svg" alt="logo">
+                </a>
+               
+                <div class="hamburger-container">
+                    <div class="hamburger-btn"></div>
+                </div>
+    
+                <nav class="navbar">
+                    <ul class="navbar_list">
+                        <li class="navbar_item login-btn"><a class="navbar_link" href="#">دیوار من</a></li>
+                        <li class="navbar_item"><a class="navbar_link" href="#">درباره دیوار</a></li>
+                        <li class="navbar_item"><a class="navbar_link" href="#">بلاگ</a></li>
+                        <li class="navbar_item"><a class="navbar_link" href="#">پشتیبانی</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="login-modal-container">
+                <div class="login-modal">
+                    <div class="login-modal-header">
+                        <strong class="login-modal__title">ورود به حساب کاربری</strong>
+                        <span class="exit-login-modal material-icons">close</span>
+                    </div>
+                    <div class="login-modal-body">
+                        <div class="login-modal-phone">
+                            <div class="login-modal-content">
+                                <strong>شماره موبایل خود را وارد کنید</strong>
+                                <p>برای استفاده از امکانات سایت، لطفا شماره مموبایل خود را وارد کنید. کد تایید به این شماره پیامک خواهد شد.</p>
+                                <form id="loginForm" class="login-input-form">
+                                    <input class="login-input" autocomplete="off" type="tel" inputmode="numeric" name="phone" placeholder="شماره موبایل">
+                                    <span class="login-input-tag">98+</span>
+                                 </form>
+                                <span class="msg-error">لطفا یک شماره موبایل معتبر وارد نمایید</span>
+                            </div>
+                            <div class="login-modal-footer">
+                                <button class="ok-footer-btn" type="submit" form="loginForm" >تایید</button>
+                            </div>
+                        </div>
+                        <div class="login-modal-code">
+                            <div class="login-modal-code-content">
+                                <strong>کد تایید را وارد کنید</strong>
+                                <p>کد پیامک شده به شماره <span>09101234567</span> را وارد کنید</p>
+                                <form action="user.html" id="codeForm" class="code-input-form">
+                                    <input class="code-input" autocomplete="off" type="number" inputmode="numeric" name="phone" placeholder="کد تایید 6 رقمی">
+                                </form>
+                                <span class="msg-CodeError">کد تایید معتبر نیست</span>
+                                <div class="replace-phone-container">
+                                    <p class="replace-phone-btn">تغییر شماره موبایل</p>
+                                </div>
+                                    
+                            </div>
+                            <div class="login-modal-code-footer">
+                                <button class="login-footer-btncode">درخواست کد</button>
+                                <button class="login-footer-btn" type="submit" form="codeForm" >ورود</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <article class="main-container">
+                <div class="ad-title-container">
+                    <p class="ad-title">ثبت آگهی</p>
+                    <span class="ad-subtitle">دست آگهی را انتخاب کنید</span>
+                </div>
+
+                <div class="select-title-container">
+                    <ul class="select-title__list">
+                        <li class="select-title_item">
+                            <div class="select-title_item-content">
+                                <span>اجاره مسکونی</span>
+                                <span class="select-title_item-icon material-icons">chevron_left</span>
+                            </div>
+                            <ul class="select-title__sublist">
+                                <li class="select-title__subitem">
+                                    <div class="select-title_subitem-content">
+                                        <span class="ad-title-value">آپارتمان</span>
+                                    </div>
+                                </li>
+                                <li class="select-title__subitem">
+                                    <div class="select-title_subitem-content">
+                                        <span class="ad-title-value">خانه و ویلا</span>
+                                    </div>
+                                </li>
+                                <li class="select-title__subitem">
+                                    <div class="select-title_subitem-content">
+                                        <span class="ad-title-value">متفرقه</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="select-title_item">
+                            <div class="select-title_item-content">
+                                <span>فروش مسکونی</span>
+                                <span class="select-title_item-icon material-icons">chevron_left</span>
+                            </div>
+                            <ul class="select-title__sublist">
+                                <li class="select-title__subitem">
+                                    <div class="select-title_subitem-content">
+                                        <span class="ad-title-value">آپارتمان</span>
+                                    </div>
+                                </li>
+                                <li class="select-title__subitem">
+                                    <div class="select-title_subitem-content">
+                                        <span class="ad-title-value">خانه و ویلا</span>
+                                    </div>
+                                </li>
+                                <li class="select-title__subitem">
+                                    <div class="select-title_subitem-content">
+                                        <span class="ad-title-value">زمین و کلنگی</span>
+                                    </div>
+                                </li>
+                                <li class="select-title__subitem">
+                                    <div class="select-title_subitem-content">
+                                        <span class="ad-title-value">متفرقه</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="select-title_item">
+                            <div class="select-title_item-content">
+                                <span>فروش اداری و تجاری</span>
+                                <span class="select-title_item-icon material-icons">chevron_left</span>
+                            </div>
+                            <ul class="select-title__sublist">
+                                <li class="select-title__subitem">
+                                    <div class="select-title_subitem-content">
+                                        <span class="ad-title-value">دفترکار،اتاق اداری و مطب</span>
+                                    </div>
+                                </li>
+                                <li class="select-title__subitem">
+                                    <div class="select-title_subitem-content">
+                                        <span class="ad-title-value">مغازه و غرفه</span>
+                                    </div>
+                                </li>
+                                <li class="select-title__subitem">
+                                    <div class="select-title_subitem-content">
+                                        <span class="ad-title-value">صنعتی، کشاورزی و تجاری</span>
+                                    </div>
+                                </li>
+                                <li class="select-title__subitem">
+                                    <div class="select-title_subitem-content">
+                                        <span class="ad-title-value">متفرقه</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="select-title_item">
+                            <div class="select-title_item-content">
+                                <span>اجاره اداری و تجاری</span>
+                                <span class="select-title_item-icon material-icons">chevron_left</span>
+                            </div>
+                            <ul class="select-title__sublist">
+                                <li class="select-title__subitem">
+                                    <div class="select-title_subitem-content">
+                                        <span class="ad-title-value">دفترکار،اتاق اداری و مطب</span>
+                                    </div>
+                                </li>
+                                <li class="select-title__subitem">
+                                    <div class="select-title_subitem-content">
+                                        <span class="ad-title-value">مغازه و غرفه</span>
+                                    </div>
+                                </li>
+                                <li class="select-title__subitem">
+                                    <div class="select-title_subitem-content">
+                                        <span class="ad-title-value">صنعتی، کشاورزی و تجاری</span>
+                                    </div>
+                                </li>
+                                <li class="select-title__subitem">
+                                    <div class="select-title_subitem-content">
+                                        <span class="ad-title-value">متفرقه</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="select-title_item">
+                            <div class="select-title_item-content">
+                                <span>اجاره کوتاه مدت</span>
+                                <span class="select-title_item-icon material-icons">chevron_left</span>
+                            </div>
+                            <ul class="select-title__sublist">
+                                <li class="select-title__subitem">
+                                    <div class="select-title_subitem-content">
+                                        <span class="ad-title-value">آپارتمان و سوئیت</span>
+                                    </div>
+                                </li>
+                                <li class="select-title__subitem">
+                                    <div class="select-title_subitem-content">
+                                        <span class="ad-title-value">ویلا و باف</span>
+                                    </div>
+                                </li>
+                                <li class="select-title__subitem">
+                                    <div class="select-title_subitem-content">
+                                        <span class="ad-title-value">دفتر کار و فضای آموزشی</span>
+                                    </div>
+                                </li>
+                                <li class="select-title__subitem">
+                                    <div class="select-title_subitem-content">
+                                        <span class="ad-title-value">متفرقه</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="select-title_item">
+                            <div class="select-title_item-content">
+                                <span>پروژه های ساخت و ساز</span>
+                                <span class="select-title_item-icon material-icons">chevron_left</span>
+                            </div>
+                            <ul class="select-title__sublist">
+                                <li class="select-title__subitem">
+                                    <div class="select-title_subitem-content">
+                                        <span class="ad-title-value">مشارکت در ساخت</span>
+                                    </div>
+                                </li>
+                                <li class="select-title__subitem">
+                                    <div class="select-title_subitem-content">
+                                        <span class="ad-title-value">پیش فروش</span>
+                                    </div>
+                                </li>
+                                <li class="select-title__subitem">
+                                    <div class="select-title_subitem-content">
+                                        <span class="ad-title-value">متفرقه</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="select-title_item">
+                            <div class="select-title_item-content">
+                                <span>متفرقه</span>
+                                <span class="select-title_item-icon material-icons">chevron_left</span>
+                            </div>
+                            <ul class="select-title__sublist">
+                                <li class="select-title__subitem">
+                                    <div class="select-title_subitem-content">
+                                        <span class="ad-title-value">متفرقه</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="ad-form-container">
+                    <form action="#">
+                        <div class="ad-form-category">
+                            <span class="ad-form-category__title"></span>
+                            <input name="adTitle" class="ad-form-category__title-input" type="text">
+                            <p class="ad-form-category__change-btn">تغییر دسته‌بندی</p>
+                        </div>
+                        <div class="ad-form-city__container">
+                            <label class="ad-form-city__title">شهر</label>
+                            <div class="ad-form-city__box">
+                                <p class="ad-form-city__name">تهران</p>
+                                <input class="ad-form-city__input" name="cityName" value="تهران">
+                                <span class="ad-form-city__arrow material-icons"> chevron_left </span>
+                            </div>
+
+                            <div class="ad-form-city__search-box">
+                                <div class="ad-form-city__search-box-header">
+                                    <span class="ad-form-city__search-box-icon material-icons">search</span>
+                                    <input class="ad-form-city__search-box-header-input" type="text">
+                                </div>
+                                <ul class="ad-form-city__search-box-list">
+                                    <li class="ad-form-city__search-box-item">تهران</li>
+                                    <li class="ad-form-city__search-box-item">ارومیه</li>
+                                    <li class="ad-form-city__search-box-item">اتبریز</li>
+                                    <li class="ad-form-city__search-box-item">کرمان</li>
+                                    <li class="ad-form-city__search-box-item">اهواز</li>
+                                    <li class="ad-form-city__search-box-item">شیراز</li>
+                                    <li class="ad-form-city__search-box-item">خوی</li>
+                                    <li class="ad-form-city__search-box-item">ماکو</li>
+                                    <li class="ad-form-city__search-box-item">سردشت</li>
+                                    <li class="ad-form-city__search-box-item">آبادان</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="ad-form-map__container">
+                            <label class="ad-form-map__title">نقشه</label>
+                            <div class="ad-form-map__box">
+                            </div>
+                        </div>
+                        <div class="ad-form-image__container">
+                            <label class="ad-form-image__title">عکس آگهی</label>
+                            <div class="ad-form-image__box">
+                                <input class="ad-form-input-file" type="file">
+                                <div class="selecet-ad-image-btn">
+                                    <img src="image/ad-image-icon.svg" alt="عکس آگهی">
+                                    <span class="material-icons"> add</span>
+                                </div>
+
+                                <img id="output" width="200" />	
+                            </div>
+                        </div>
+                        <button type="submit">sumit</button>
+                    </form>
+                   
+                </div>
+            </article>
+        </main>
+    </div>
+
+    <!-- jquery -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+
+    <!-- custom scripts -->
+    <script src="js/hader.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            // show select-title__sublist
+            $('.select-title_item-content').click(function() {
+                $(this).siblings('.select-title__sublist').toggleClass('show-select-title__sublist');
+                
+                if ($(this).siblings('.select-title__sublist').hasClass('show-select-title__sublist')) {
+                    $(this).children('.select-title_item-icon').css( {'transform': 'rotate(-90deg)'});
+                } else {
+                    $(this).children('.select-title_item-icon').css( {'transform': 'rotate(0deg)'});
+                }
+            });
+
+            // select adTarget title
+            $('.ad-title-value').click(function() {
+                let adTarget = $(this).text();
+                $('.ad-form-category__title').text(adTarget);
+                $('.ad-form-category__title-input').val(adTarget);
+
+                $(this).parents('.select-title__sublist').removeClass('show-select-title__sublist');
+                $('.select-title_item-icon').css( {'transform': 'rotate(0deg)'});
+
+                $('.select-title-container').addClass('hide-select-title-container');
+                $('.ad-form-container').addClass('show-ad-form-container');
+            });
+
+
+            $('.ad-form-category__change-btn').click(function() {
+                $('.select-title-container').removeClass('hide-select-title-container');
+                $('.ad-form-container').removeClass('show-ad-form-container');
+            });
+
+            // show ad-form-city__search-box
+            $('.ad-form-city__box').click(function() {
+                $('.ad-form-city__search-box').toggleClass('show-ad-form-city__search-box');
+
+                if ($('.ad-form-city__search-box').hasClass('show-ad-form-city__search-box')) {
+                    $(this).css('border-color',' #000');
+                    $(this).children('.ad-form-city__arrow').css( {'transform': 'rotate(90deg)'});
+                    $(this).children('.ad-form-city__arrow').css( {'color': '#000'});
+                } else {
+                    $(this).css('border-color',' rgba(0,0,0,.16)');
+                    $(this).children('.ad-form-city__arrow').css( {'transform': 'rotate(0deg)'});
+                    $(this).children('.ad-form-city__arrow').css( {'color': 'rgba(0,0,0,.16)'});
+                }
+            });
+
+            // select ad-city name
+            $('.ad-form-city__search-box-item').click(function() {
+                let targetCity = $(this).text();
+                $('.ad-form-city__name').text(targetCity);
+                $('.ad-form-city__input').val(targetCity);
+
+                $('.ad-form-city__search-box').removeClass('show-ad-form-city__search-box');
+            });
+
+            // select ad-image
+            $('.selecet-ad-image-btn').click(function() {
+                $('.ad-form-input-file').click();
+            });
+
+
+            var loadFile = function(event) {
+                var image = document.getElementById('output');
+                image.src = URL.createObjectURL(event.target.files[0]);
+            };
+            
+            $('.ad-form-input-file').change(function() {
+                console.log($(this).val())
+
+            })
+        });
+    </script>
+</body>
+
+</html>

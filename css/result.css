@@ -1,0 +1,706 @@
+.wrapper {
+    position: relative;
+    width: 100%;
+}
+
+.header {
+    display: none;
+}
+
+
+.fit-vh {
+    height: 100vh;
+    overflow: hidden;
+}
+
+.header-search-container {
+    position: fixed;
+    width: 100%;
+    height: 115px;
+    top: 0;
+}
+
+.header-search {
+    width: 100%;
+    height: 65px;
+    padding: 0 1rem;
+    border-bottom: 1px solid rgb(0, 0, 0, 12%);
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+.header-search-box {
+    width: 100%;
+    height: 40px;
+    background-color: rgba(0,0,0,.04);
+    border-radius: 4px;
+    overflow: hidden;
+    display: flex;
+    padding: .3rem;
+}
+
+.header-search-input {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    border-left: 1px solid gainsboro;
+    padding-left: .3rem;
+}
+
+.header-search-input span {
+    margin-left: .3rem;
+    color: #afafaf;
+}
+
+.header-search-input input {
+    flex: 1;
+    border: none;
+    background-color: transparent;
+}
+
+.header-search-input input:focus {
+    outline: none;
+}
+
+.header-search-city {
+    width: 90px;
+    height: 100%;
+    padding-right: .3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #afafaf;
+}
+
+.header-fillter {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding-right: 1rem;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    box-shadow: 0 2px 2px 0 rgb(0 0 0 / 12%);
+    background-color: #fff;
+    white-space: nowrap;
+}
+
+.header-fillter__item {
+    display: inline-block;
+    border-radius: 16px;
+    border: 1px solid gainsboro;
+    margin-left: 8px;
+    font-size: .875rem;
+    font-weight: 400;
+    color: #afafaf;
+    outline: none;
+    padding: 3px 12px;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-fillter__item h3 {
+    display: flex;
+    align-items: center;
+}
+
+.header-fillter__btn,
+.category-fillter__btn {
+    display: flex;
+    border-radius: 16px;
+    border: 1px solid gainsboro;
+    background-color: #fff;
+    margin-left: 8px;
+    font-size: .875rem;
+    font-weight: 400;
+    color: #afafaf;
+    outline: none;
+    padding: 3px 12px;
+    align-items: center;
+    justify-content: center;
+}
+
+.main {
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 115px;
+    padding-bottom: 100px;
+    display: flex;
+}
+
+.card-container {
+    width: 100%;
+    padding-top: 8px;
+}
+
+.product-container {
+    width: 100%;
+    height: 184px;
+    padding: 0 8px 8px;
+}
+
+.product__item {
+    display: inline-flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    border: 1px solid gainsboro;
+    border-radius: 5px;
+    padding: 1rem;
+}
+
+.product__desc {
+    width: 60%;
+    height: 136px;
+    display: flex;
+    flex-direction: column;
+}
+
+.product__img {
+    width: 136px;
+    height: 136px;
+    border-radius: 5px;
+    border: 1px solid gainsboro;
+    background-color: #afafaf;
+    overflow: hidden;
+}
+
+.product__img figure,
+.product__img img  {
+    width: 100%;
+    height: 100%;
+}
+
+.product__title {
+    color: rgba(0,0,0,.87);
+    font-size: 1rem;
+    font-weight: 500;
+    height: 56px;
+    line-height: 28px;
+    margin-bottom: auto;
+    overflow: hidden;
+    overflow-wrap: break-word;
+}
+
+.product__text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.product__price,
+.product__date {
+    color: rgba(0,0,0,.56);
+    font-size: .875rem;
+    line-height: 24px;
+}
+
+
+
+a.active-nav-item {
+    color: #a62626;
+}
+
+.city-modal-container {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 100;
+    background-color: #fff;
+    display: none;
+}
+
+.show-city-modal-container {
+    display: block;
+}
+
+.city-modal {
+    width: 100%;
+    height: 100%;
+}
+
+.city-modal__header {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 155px;
+    top: 0;
+    box-shadow: 0 1px 2px 0 rgb(0 0 0 / 12%);
+    padding: .7rem 1rem;
+    background-color: #fff;
+    z-index: 1;
+}
+
+.city-modal__header-title,
+.city-modal__header-list,
+.city-modal__header-search {
+    width: 100%;
+    height: 40px;
+}
+
+.city-modal__header-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.city-modal__header-title span:first-of-type {
+    font-size: 1.1rem;
+    color: #000;
+    font-weight: 500;
+}
+
+.city-modal__header-btn-delete {
+    font-size: .75rem;
+    color: #a62626;
+}
+
+.city-modal__header-list {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    overflow-y: hidden;
+    overflow-x: auto;
+}
+
+.city-modal__header-item {
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: .2rem 1rem;
+    border-radius: 15px;
+    background-color: rgba(166,38,38,.2);
+    border: 1px solid rgba(166,38,38,.56);
+    color: #a62626;
+    font-size: 1rem;
+    margin-left: .5rem;
+    white-space: nowrap;
+}
+
+.city-modal__header-item input {
+    display: none;
+}
+
+.submit-list-city {
+    display: none;
+}
+
+.city-modal__header-item span:last-of-type {
+    font-size: 1rem;
+    margin-right: .5rem;
+}
+
+.city-modal__header-search {
+    border: 1px solid gainsboro;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.city-modal__header-search span {
+    width: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #afafaf;
+}
+
+.city-modal__header-search input {
+    flex: 1;
+    border: none;
+}
+
+.city-modal__header-search input:focus {
+    outline: none;
+}
+
+.city-modal__main {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: auto;
+    padding-bottom: 65px;
+    background-color: #fff;
+    padding: 0 1rem;
+    padding-top: 155px;
+    padding-bottom: 60px;
+}
+
+.city-modal__main-item {
+    padding: .5rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid gainsboro;
+    margin-top: .5rem;
+    padding-bottom: 1rem;
+}
+
+.city-modal__main-item span:last-of-type {
+    color: #afafaf;
+}
+
+.city-modal__main-cityList {
+    position: fixed;
+    right: 0;
+    left: 0;
+    height: 100%;
+    background-color: #fff;
+    display: none;
+    padding: 1rem;
+}
+
+.show-city-modal__main-cityList {
+    display: block;
+}
+
+.modal__cityList__header {
+    width: 100%;
+    height: 40px;
+    border-bottom: 1px solid gainsboro;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+}
+
+.modal__cityList__header span:first-of-type {
+    width: 30px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 20px;
+    color: #afafaf;
+}
+
+.modal__cityList__body {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    padding-bottom: 250px;
+}
+
+.modal__cityList__item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: .7rem;
+    padding-bottom: .7rem;
+    border-bottom: 1px solid gainsboro;
+    font-size: 1rem;
+}
+
+.modal__cityList__item input {
+    position: relative;
+    width: 18px;
+    height: 18px;
+    background-color: #a62626;
+    opacity: 0;
+
+}
+
+.checkbox-redesign {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: .1rem;
+    content: '';
+    width: 18px;
+    height: 18px;
+    left: 0;
+    border: 1px solid gainsboro;
+    border-radius: 3px;
+}
+
+.checkbox-redesign span {
+    font-size: 16px;
+    font-weight: 900;
+}
+
+.city-modal__navigation {
+    position: fixed;
+    width: 100%;
+    height: 64px;
+    padding: 12px 8px;
+    bottom: 0;
+    box-shadow: 0 -1px 2px 0 rgb(0 0 0 / 12%);
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.city-modal__btn-cancel,
+.city-modal__btn-ok {
+    width: 175px;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border: 1px solid #afafaf;
+    color: #afafaf;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.city-modal__btn-ok {
+    background-color: #a62626;
+    color: #fff;
+    border: none;
+}
+
+.search-modal-container {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    left: 110%;
+    transition: all .3s ease;
+    background-color: #fff;
+    z-index: 10;
+}
+
+.show-search-modal-container {
+    left: 0;
+    transition: all .3s ease;
+}
+
+.search-modal__header {
+    width: 100%;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    padding: 1rem .5rem;
+    box-shadow: 0 1px 2px 0 rgb(0 0 0 / 12%);
+}
+
+.search-modal__header-icon {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-modal__header-input {
+    flex: 1;
+    height: 40px;
+}
+
+.search-modal__header-input input {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.search-modal__header-input input:focus {
+    outline: none;
+}
+
+.search-modal__body {
+    width: 100%;
+    height: calc(100vh - 65px);
+    overflow: auto;
+    padding: 0 1rem;
+}
+
+.search-modal__body-text {
+    display: flex;
+    padding-top: 1rem;
+    padding-bottom: .5rem;
+    border-bottom: 1px solid rgba(0,0,0,.12);
+}
+
+.search-modal__body-text-icon {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-modal__body-text-icon span {
+    font-size: 20px;
+    color: #afafaf;
+}
+
+.search-modal__body-text-content {
+    flex: 1;
+    height: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.search-modal__body-text-content span {
+    color: rgba(0,0,0,.87);
+    font-size: .875rem;
+}
+
+.search-modal__body-item {
+    display: inline-block;
+    width: 100%;
+    padding: 1rem;
+    padding-top: 10px;
+    border-bottom: 1px solid rgba(0,0,0,.12);
+}
+
+.search-modal__body-item__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search-modal__body-item__title {
+    color: rgba(0,0,0,.87);
+    font-size: .875rem;
+}
+
+.search-modal__body-item__count {
+    color: rgba(0,0,0,.32);
+    flex-shrink: 0;
+    font-size: .875rem;
+}
+
+.search-modal__body-item__subtitle {
+    color: rgba(0,0,0,.56);
+    font-size: .75rem;
+    margin-top: 4px;
+}
+
+.category-modal-container,
+.subcategory-modal-container,
+.fillter-modal-container {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+    left: 110%;
+    z-index: 10;
+    transition: all .3s ease;
+}
+
+.show-category-modal-container,
+.show-subcategory-modal-container,
+.show-fillter-modal-container {
+    left: 0;
+    transition: all .3s ease;
+}
+
+.category-modal__header,
+.subcategory-modal__header,
+.fillter-modal__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 1px 2px 0 rgb(0 0 0 / 12%);
+    padding: 16px;
+}
+
+.subcategory-modal__header strong {
+    flex: 1;
+    margin-right: .5rem;
+}
+
+.category-modal__body,
+.subcategory-modal__body,
+.fillter-modal__body {
+    width: 100%;
+    height: calc(100vh - 57px);
+    overflow: auto;
+    padding: .5rem 1rem;
+    padding-bottom: 0;
+}
+
+.category-modal__item,
+.subcategory-modal__item {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .5rem 0;
+    border-bottom: 1px solid rgba(0,0,0,.12);
+}
+
+.category-modal__item__title,
+.subcategory-modal__item__title {
+    flex: 1;
+}
+
+.category-modal__item span {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(0,0,0,.87);
+}
+
+.category-modal__item span:last-of-type {
+    color: rgba(0,0,0,.32);
+}
+
+.category-modal__item h2 {
+    color: rgba(0,0,0,.87);
+
+}
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { }
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {  }
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+    .header {
+        display: flex;
+    }
+
+    .navigation-container {
+        display: none;
+    }
+
+    .header-search-container {
+        display: none;
+    }
+
+    .sidebar-container {
+        width: 280px;
+        min-height: 100vh;
+        background-color: #a62626;
+    }
+
+    .card-container {
+        padding-top: 0;
+        height: fit-content;
+        width: calc(100% - 280px);
+        display: grid;
+        grid-template-columns: auto auto;
+        row-gap: .5rem;
+    }
+ }
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {  }
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) { 
+    .card-container {
+        grid-template-columns: auto auto auto;
+    }
+ }

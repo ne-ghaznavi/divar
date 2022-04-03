@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="fa" dir='rtl'>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>دیوار</title>
+
+    <!-- google font icon -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- fontawesome cdn -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+    <!-- custom styles -->
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/navigation.css" />
+    <link rel="stylesheet" href="css/result.css" />
+</head>
+
+<body>
+    <div class="wrapper single-wrapper">
+        <header class="header">
+            <div class="header-container">
+                <a href="index.html" class="logo">
+                    <img class="logo__img" src="image/logo.svg" alt="logo">
+                </a>
+                <div class="advert-btn">
+                    <div class="header-category-list">
+                        <div class="header-category-btn">
+                            <strong>دسته‌ها</strong>
+                            <span class="material-icons">expand_more </span>
+                        </div>
+                    </div>
+                    <div class="header-desk-search-box-container">
+                        <div class="header-desk-search-box">
+                            <div class="desk-search-box-icon">
+                                <span class="material-icons">search</span>
+                            </div>
+                            <input class="desk-search-box-input" type="text" placeholder="جستجو در همه آگهی‌ها">
+                            <div class="desk-search-box-dropdown">
+                                <a href="#" class="desk-search-box-dropdown-item">
+                                    <div class="desk-search-box-dropdown-item-title">
+                                        <h2>مبل</h2>
+                                        <span>+10 آگهی</span>
+                                    </div>
+                                    <h4 class="desk-search-box-dropdown-item-subtitle">در مبلمان خانگی</h4>
+                                </a>
+                                <a href="#" class="desk-search-box-dropdown-item">
+                                    <div class="desk-search-box-dropdown-item-title">
+                                        <h2>مبل</h2>
+                                        <span>+10 آگهی</span>
+                                    </div>
+                                    <h4 class="desk-search-box-dropdown-item-subtitle">در مبلمان خانگی</h4>
+                                </a>
+                                <a href="#" class="desk-search-box-dropdown-item">
+                                    <div class="desk-search-box-dropdown-item-title">
+                                        <h2>مبل</h2>
+                                        <span>+10 آگهی</span>
+                                    </div>
+                                    <h4 class="desk-search-box-dropdown-item-subtitle">در مبلمان خانگی</h4>
+                                </a>
+                                <a href="#" class="desk-search-box-dropdown-item">
+                                    <div class="desk-search-box-dropdown-item-title">
+                                        <h2>مبل</h2>
+                                        <span>+10 آگهی</span>
+                                    </div>
+                                    <h4 class="desk-search-box-dropdown-item-subtitle">در مبلمان خانگی</h4>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="advert-btn__link" href="#">ثبت آگهی</a>
+                </div>
+                <div class="hamburger-container">
+                    <div class="hamburger-btn"></div>
+                </div>
+
+                <nav class="navbar">
+                    <ul class="navbar_list">
+                        <li class="navbar_item login-btn"><a class="navbar_link" href="#">دیوار من</a></li>
+                        <li class="navbar_item"><a class="navbar_link" href="#">درباره دیوار</a></li>
+                        <li class="navbar_item"><a class="navbar_link" href="#">بلاگ</a></li>
+                        <li class="navbar_item"><a class="navbar_link" href="#">پشتیبانی</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="login-modal-container">
+                <div class="login-modal">
+                    <div class="login-modal-header">
+                        <strong class="login-modal__title">ورود به حساب کاربری</strong>
+                        <span class="exit-login-modal material-icons">close</span>
+                    </div>
+                    <div class="login-modal-body">
+                        <div class="login-modal-phone">
+                            <div class="login-modal-content">
+                                <strong>شماره موبایل خود را وارد کنید</strong>
+                                <p>برای استفاده از امکانات سایت، لطفا شماره مموبایل خود را وارد کنید. کد تایید به این شماره پیامک خواهد شد.</p>
+                                <form id="loginForm" class="login-input-form">
+                                    <input class="login-input" autocomplete="off" type="tel" inputmode="numeric" name="phone" placeholder="شماره موبایل">
+                                    <span class="login-input-tag">98+</span>
+                                 </form>
+                                <span class="msg-error">لطفا یک شماره موبایل معتبر وارد نمایید</span>
+                            </div>
+                            <div class="login-modal-footer">
+                                <button class="ok-footer-btn" type="submit" form="loginForm" >تایید</button>
+                            </div>
+                        </div>
+                        <div class="login-modal-code">
+                            <div class="login-modal-code-content">
+                                <strong>کد تایید را وارد کنید</strong>
+                                <p>کد پیامک شده به شماره <span>09101234567</span> را وارد کنید</p>
+                                <form action="user.html" id="codeForm" class="code-input-form">
+                                    <input class="code-input" autocomplete="off" type="number" inputmode="numeric" name="phone" placeholder="کد تایید 6 رقمی">
+                                </form>
+                                <span class="msg-CodeError">کد تایید معتبر نیست</span>
+                                <div class="replace-phone-container">
+                                    <p class="replace-phone-btn">تغییر شماره موبایل</p>
+                                </div>
+                                    
+                            </div>
+                            <div class="login-modal-code-footer">
+                                <button class="login-footer-btncode">درخواست کد</button>
+                                <button class="login-footer-btn" type="submit" form="codeForm" >ورود</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section class="desc-menu-modal">
+            <div class="desc-menu-modal-container">
+                <div class="desk-menu-container">
+                    <ul class="desk-menu-list">
+                        <li class="desk-menu-item" data-menuItem="1">
+                            <img src="image/menu-icon-home.svg" alt="menu-icon-home">
+                            <span>املاک</span>
+                            <span class="material-icons">keyboard_arrow_left</span>
+                        </li>
+                        <li class="desk-menu-item" data-menuItem="2">
+                            <img src="image/menu-icon-home.svg" alt="menu-icon-home">
+                            <span>املاک</span>
+                            <span class="material-icons">keyboard_arrow_left</span>
+                        </li>
+                        <li class="desk-menu-item" data-menuItem="3">
+                            <img src="image/menu-icon-home.svg" alt="menu-icon-home">
+                            <span>املاک</span>
+                            <span class="material-icons">keyboard_arrow_left</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="desk-sebmenu-container">
+                    <ul class="desk-submenu-list desk-sebmenu-active-list" data-submenuItem="1">
+                        <div class="category-submenu-group">
+                            <a href="#" class="category-menu-item">فروش مسکونی</a>
+                            <a href="#" class="category-menu-item">آپارتمان</a>
+                            <a href="#" class="category-menu-item">خانه و ویلا</a>
+                            <a href="#" class="category-menu-item">زمینی و کلنگی</a>
+                        </div>
+                        <div class="category-submenu-group">
+                            <a href="#" class="category-menu-item">اجاره مسکونی</a>
+                            <a href="#" class="category-menu-item">آپارتمان</a>
+                            <a href="#" class="category-menu-item">خانه و ویلا</a>
+                        </div>
+                        <div class="category-submenu-group">
+                            <a href="#" class="category-menu-item">فروش اداری و تجاری</a>
+                            <a href="#" class="category-menu-item">دفتر کار</a>
+                            <a href="#" class="category-menu-item">مغازه و غرفه</a>
+                            <a href="#" class="category-menu-item">صنعتی</a>
+                        </div>
+                        <div class="category-submenu-group">
+                            <a href="#" class="category-menu-item">فروش مسکونی</a>
+                            <a href="#" class="category-menu-item">آپارتمان</a>
+                            <a href="#" class="category-menu-item">خانه و ویلا</a>
+                            <a href="#" class="category-menu-item">زمینی و کلنگی</a>
+                        </div>
+                        <div class="category-submenu-group">
+                            <a href="#" class="category-menu-item">اجاره مسکونی</a>
+                            <a href="#" class="category-menu-item">آپارتمان</a>
+                            <a href="#" class="category-menu-item">خانه و ویلا</a>
+                        </div>
+                        <div class="category-submenu-group">
+                            <a href="#" class="category-menu-item">فروش اداری و تجاری</a>
+                            <a href="#" class="category-menu-item">دفتر کار</a>
+                            <a href="#" class="category-menu-item">مغازه و غرفه</a>
+                            <a href="#" class="category-menu-item">صنعتی</a>
+                        </div>
+                    </ul>
+                    <ul class="desk-submenu-list" data-submenuItem="2">
+                        <div class="category-submenu-group">
+                            <a href="#" class="category-menu-item">فروش مسکونی</a>
+                            <a href="#" class="category-menu-item">آپارتمان</a>
+                            <a href="#" class="category-menu-item">خانه و ویلا</a>
+                            <a href="#" class="category-menu-item">زمینی و کلنگی</a>
+                        </div>
+                    </ul>
+                    <ul class="desk-submenu-list" data-submenuItem="3">
+                        <div class="category-submenu-group">
+                            <a href="#" class="category-menu-item">اجاره مسکونی</a>
+                            <a href="#" class="category-menu-item">آپارتمان</a>
+                            <a href="#" class="category-menu-item">خانه و ویلا</a>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="header-search-container">
+            <div class="header-search">
+                <form class="header-search-box">
+                    <div class="header-search-input">
+                        <span class="material-icons">search</span>
+                        <input autocomplete="off" type="text" name="cityName">
+                    </div>
+                    <div class="header-search-city">
+                        <span class="header-search-city-name"> ارومیه</span>
+                        <span class="material-icons header-search-city-icon">location_on</span>
+                    </div>
+                </form>
+            </div>
+            <div class="header-fillter">
+                <button class="header-fillter__btn">
+                    <span class="material-icons">filter_list</span>
+                    <span>فیلترها</span>
+                </button>
+                <button class="category-fillter__btn">
+                    <span class="material-icons">list</span>
+                    <span>دسته‌ها</span>
+                </button>
+                <a class="header-fillter__item" href="#">خودرو سواری</a>
+                <a class="header-fillter__item" href="#">فروش آپارتمان</a>
+                <a class="header-fillter__item" href="#">اجاره آپارتمان</a>
+                <a class="header-fillter__item" href="#">موبایل</a>
+                <a class="header-fillter__item" href="#">صندلی و نیمکت</a>
+                <a class="header-fillter__item" href="#">خدمات</a>
+                <a class="header-fillter__item" href="#">استخدام</a>
+            </div>
+        </section>
+
+        <section class="city-modal-container">
+            <article class="city-modal">
+                <section class="city-modal__header">
+                    <div class="city-modal__header-title">
+                        <span>انتخاب شهر</span>
+                        <span class="city-modal__header-btn-delete">حذف همه</span>
+                    </div>
+                    <form action="#" class="city-modal__header-list">
+                        <div class="city-modal__header-item">
+                            <input type="text" name="cityName" value="ارومیه">ارومیه</span>
+                            <span class="material-icons">close</span>
+                        </div>
+                        <input class="submit-list-city" type="submit">
+                    </form>
+                    <div class="city-modal__header-search">
+                        <span class="material-icons">search</span>
+                        <input type="search">
+                    </div>
+                </section>
+                <section class="city-modal__main">
+                    <div class="city-modal__main-cityList">
+                        <div class="modal__cityList__header">
+                            <span class="material-icons">east</span>
+                            <span>همه شهرها</span>
+                        </div>
+                        <div class="modal__cityList__body">
+                        </div>
+                    </div>
+                </section>
+                <section class="city-modal__navigation">
+                    <button class="city-modal__btn-cancel">انصراف</button>
+                    <button class="city-modal__btn-ok">تایید</button>
+                </section>
+            </article>
+        </section>
+
+        <section class="search-modal-container">
+            <div class="search-modal__header">
+                <div class="search-modal__header-icon">
+                    <span class="material-icons">east</span>
+                </div>
+                <div class="search-modal__header-input">
+                    <input autocomplete="off" type="search" class="search-modal__header-input-search"
+                        name="search-value">
+                </div>
+            </div>
+            <div class="search-modal__body">
+                <a href="#" class="search-modal__body-text">
+                    <div class="search-modal__body-text-icon">
+                        <span class="material-icons">search</span>
+                    </div>
+                    <div class="search-modal__body-text-content">
+                        <span>جستجوی</span>
+                    </div>
+                </a>
+                <a href="#" class="search-modal__body-item">
+                    <div class="search-modal__body-item__top">
+                        <h2 class="search-modal__body-item__title">a12</h2>
+                        <p class="search-modal__body-item__count">80+ آگهی</p>
+                    </div>
+                    <p class="search-modal__body-item__subtitle">در موبایل</p>
+                </a>
+                <a href="#" class="search-modal__body-item">
+                    <div class="search-modal__body-item__top">
+                        <h2 class="search-modal__body-item__title">a12</h2>
+                        <p class="search-modal__body-item__count">80+ آگهی</p>
+                    </div>
+                    <p class="search-modal__body-item__subtitle">در موبایل</p>
+                </a>
+                <a href="#" class="search-modal__body-item">
+                    <div class="search-modal__body-item__top">
+                        <h2 class="search-modal__body-item__title">a12</h2>
+                        <p class="search-modal__body-item__count">80+ آگهی</p>
+                    </div>
+                    <p class="search-modal__body-item__subtitle">در موبایل</p>
+                </a>
+                <a href="#" class="search-modal__body-item">
+                    <div class="search-modal__body-item__top">
+                        <h2 class="search-modal__body-item__title">a12</h2>
+                        <p class="search-modal__body-item__count">80+ آگهی</p>
+                    </div>
+                    <p class="search-modal__body-item__subtitle">در موبایل</p>
+                </a>
+                <a href="#" class="search-modal__body-item">
+                    <div class="search-modal__body-item__top">
+                        <h2 class="search-modal__body-item__title">a12</h2>
+                        <p class="search-modal__body-item__count">80+ آگهی</p>
+                    </div>
+                    <p class="search-modal__body-item__subtitle">در موبایل</p>
+                </a>
+                <a href="#" class="search-modal__body-item">
+                    <div class="search-modal__body-item__top">
+                        <h2 class="search-modal__body-item__title">a12</h2>
+                        <p class="search-modal__body-item__count">80+ آگهی</p>
+                    </div>
+                    <p class="search-modal__body-item__subtitle">در موبایل</p>
+                </a>
+                <a href="#" class="search-modal__body-item">
+                    <div class="search-modal__body-item__top">
+                        <h2 class="search-modal__body-item__title">a12</h2>
+                        <p class="search-modal__body-item__count">80+ آگهی</p>
+                    </div>
+                    <p class="search-modal__body-item__subtitle">در موبایل</p>
+                </a>
+                <a href="#" class="search-modal__body-item">
+                    <div class="search-modal__body-item__top">
+                        <h2 class="search-modal__body-item__title">a12</h2>
+                        <p class="search-modal__body-item__count">80+ آگهی</p>
+                    </div>
+                    <p class="search-modal__body-item__subtitle">در موبایل</p>
+                </a>
+                <a href="#" class="search-modal__body-item">
+                    <div class="search-modal__body-item__top">
+                        <h2 class="search-modal__body-item__title">a12</h2>
+                        <p class="search-modal__body-item__count">80+ آگهی</p>
+                    </div>
+                    <p class="search-modal__body-item__subtitle">در موبایل</p>
+                </a>
+                <a href="#" class="search-modal__body-item">
+                    <div class="search-modal__body-item__top">
+                        <h2 class="search-modal__body-item__title">a12</h2>
+                        <p class="search-modal__body-item__count">80+ آگهی</p>
+                    </div>
+                    <p class="search-modal__body-item__subtitle">در موبایل</p>
+                </a>
+            </div>
+        </section>
+
+        <section class="category-modal-container">
+            <div class="category-modal__header">
+                <strong>انتخاب دسته‌بندی</strong>
+                <span class="exit-category-modal material-icons">close</span>
+            </div>
+            <div class="category-modal__body">
+                <div class="category-modal__item">
+                    <span class="material-icons">location_city</span>
+                    <h2 class="category-modal__item__title">املاک</h2>
+                    <span class="material-icons">chevron_left</span>
+                </div>
+                <div class="category-modal__item">
+                    <span class="material-icons">location_city</span>
+                    <h2 class="category-modal__item__title">املاک</h2>
+                    <span class="material-icons">chevron_left</span>
+                </div>
+                <div class="category-modal__item">
+                    <span class="material-icons">location_city</span>
+                    <h2 class="category-modal__item__title">املاک</h2>
+                    <span class="material-icons">chevron_left</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="subcategory-modal-container">
+            <div class="subcategory-modal__header">
+                <span class="back-category-modal material-icons">east</span>
+                <strong>املاک</strong>
+                <span class="exit-subcategory-modal material-icons">close</span>
+            </div>
+            <div class="subcategory-modal__body">
+                <div class="subcategory-modal__item">
+                    <h2 class="subcategory-modal__item__title">املاک</h2>
+                </div>
+            </div>
+        </section>
+
+        <section class="fillter-modal-container">
+            <div class="fillter-modal__header">
+                <strong>فیلترها</strong>
+                <span class="exit-fillter-modal material-icons">close</span>
+            </div>
+
+            <div class="fillter-modal__body">
+
+            </div>
+        </section>
+
+        <main class="main">
+            <div class="sidebar-container"></div>
+            <div class="card-container">
+                <div class="product-container">
+                    <a href="single.html" class="product__item">
+                        <div class="product__desc">
+                            <h2 class="product__title">سرویس تخت خواب</h2>
+                            <div class="product__text">
+                                <div class="product__price">
+                                    <span>2/300/000</span>
+                                    <span>ریال</span>
+                                </div>
+                                <div class="product__date">
+                                    <span>دقایقی پیش</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product__img">
+                            <figure>
+                                <img src="image/card-bg.webp" alt="product-image">
+                            </figure>
+                        </div>
+                    </a>
+                </div>
+                <div class="product-container">
+                    <a href="single.html" class="product__item">
+                        <div class="product__desc">
+                            <h2 class="product__title">سرویس تخت خواب</h2>
+                            <div class="product__text">
+                                <div class="product__price">
+                                    <span>2/300/000</span>
+                                    <span>ریال</span>
+                                </div>
+                                <div class="product__date">
+                                    <span>دقایقی پیش</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product__img">
+                            <figure>
+                                <img src="image/card-bg.webp" alt="product-image">
+                            </figure>
+                        </div>
+                    </a>
+                </div>
+                <div class="product-container">
+                    <a href="single.html" class="product__item">
+                        <div class="product__desc">
+                            <h2 class="product__title">سرویس تخت خواب</h2>
+                            <div class="product__text">
+                                <div class="product__price">
+                                    <span>2/300/000</span>
+                                    <span>ریال</span>
+                                </div>
+                                <div class="product__date">
+                                    <span>دقایقی پیش</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product__img">
+                            <figure>
+                                <img src="image/card-bg.webp" alt="product-image">
+                            </figure>
+                        </div>
+                    </a>
+                </div>
+                <div class="product-container">
+                    <a href="single.html" class="product__item">
+                        <div class="product__desc">
+                            <h2 class="product__title">سرویس تخت خواب</h2>
+                            <div class="product__text">
+                                <div class="product__price">
+                                    <span>2/300/000</span>
+                                    <span>ریال</span>
+                                </div>
+                                <div class="product__date">
+                                    <span>دقایقی پیش</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product__img">
+                            <figure>
+                                <img src="image/card-bg.webp" alt="product-image">
+                            </figure>
+                        </div>
+                    </a>
+                </div>
+                <div class="product-container">
+                    <a href="single.html" class="product__item">
+                        <div class="product__desc">
+                            <h2 class="product__title">سرویس تخت خواب</h2>
+                            <div class="product__text">
+                                <div class="product__price">
+                                    <span>2/300/000</span>
+                                    <span>ریال</span>
+                                </div>
+                                <div class="product__date">
+                                    <span>دقایقی پیش</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product__img">
+                            <figure>
+                                <img src="image/card-bg.webp" alt="product-image">
+                            </figure>
+                        </div>
+                    </a>
+                </div>
+                <div class="product-container">
+                    <a href="single.html" class="product__item">
+                        <div class="product__desc">
+                            <h2 class="product__title">سرویس تخت خواب</h2>
+                            <div class="product__text">
+                                <div class="product__price">
+                                    <span>2/300/000</span>
+                                    <span>ریال</span>
+                                </div>
+                                <div class="product__date">
+                                    <span>دقایقی پیش</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product__img">
+                            <figure>
+                                <img src="image/card-bg.webp" alt="product-image">
+                            </figure>
+                        </div>
+                    </a>
+                </div>
+                <div class="product-container">
+                    <a href="single.html" class="product__item">
+                        <div class="product__desc">
+                            <h2 class="product__title">سرویس تخت خواب</h2>
+                            <div class="product__text">
+                                <div class="product__price">
+                                    <span>2/300/000</span>
+                                    <span>ریال</span>
+                                </div>
+                                <div class="product__date">
+                                    <span>دقایقی پیش</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product__img">
+                            <figure>
+                                <img src="image/card-bg.webp" alt="product-image">
+                            </figure>
+                        </div>
+                    </a>
+                </div>
+                <div class="product-container">
+                    <a href="single.html" class="product__item">
+                        <div class="product__desc">
+                            <h2 class="product__title">سرویس تخت خواب</h2>
+                            <div class="product__text">
+                                <div class="product__price">
+                                    <span>2/300/000</span>
+                                    <span>ریال</span>
+                                </div>
+                                <div class="product__date">
+                                    <span>دقایقی پیش</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product__img">
+                            <figure>
+                                <img src="image/card-bg.webp" alt="product-image">
+                            </figure>
+                        </div>
+                    </a>
+                </div>
+                <div class="product-container">
+                    <a href="single.html" class="product__item">
+                        <div class="product__desc">
+                            <h2 class="product__title">سرویس تخت خواب</h2>
+                            <div class="product__text">
+                                <div class="product__price">
+                                    <span>2/300/000</span>
+                                    <span>ریال</span>
+                                </div>
+                                <div class="product__date">
+                                    <span>دقایقی پیش</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product__img">
+                            <figure>
+                                <img src="image/card-bg.webp" alt="product-image">
+                            </figure>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+        </main>
+
+        <section class="navigation-container">
+            <div class="navigation-bottom">
+                <a href="#" class="navigation-bottom_item active-nav-item">
+                    <div class="navigation-bottom_item-img">
+                        <span class="material-icons"> description</span>
+                    </div>
+                    <div class="navigation-bottom_item-text">
+                        <span>آگهی‌ها</span>
+                    </div>
+                </a>
+                <a href="#" class="navigation-bottom_item">
+                    <div class="navigation-bottom_item-img">
+                        <span class="material-icons"> toc</span>
+                    </div>
+                    <div class="navigation-bottom_item-text">
+                        <span>دسته‌ها</span>
+                    </div>
+                </a>
+                <a href="#" class="navigation-bottom_item">
+                    <div class="navigation-bottom_item-img">
+                        <span class="material-icons"> add_circle</span>
+                    </div>
+                    <div class="navigation-bottom_item-text">
+                        <span>ثبت آگهی</span>
+                    </div>
+                </a>
+                <a href="#" class="navigation-bottom_item">
+                    <div class="navigation-bottom_item-img">
+                        <span class="material-icons">contact_support</span>
+                    </div>
+                    <div class="navigation-bottom_item-text">
+                        <span>چت</span>
+                    </div>
+                </a>
+                <a href="user.html" class="navigation-bottom_item">
+                    <div class="navigation-bottom_item-img">
+                        <span class="material-icons">person</span>
+                    </div>
+                    <div class="navigation-bottom_item-text">
+                        <span>دیوار من</span>
+                    </div>
+                </a>
+            </div>
+        </section>
+    </div>
+
+    <!-- jquery -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+
+    <!-- custom scripts -->
+    <script src="js/result.js"></script>
+    <script src="js/hader.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            
+        })
+    </script>
+</body>
+
+</html>
